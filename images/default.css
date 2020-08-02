@@ -21,7 +21,9 @@ h5,
 h6,
 strong {
   color: var(--maintext);
-  font-family: "Russo One", sans-serif;
+  font-family: "Waiting for the Sunrise", cursive;
+
+  font-weight: 500;
 }
 p,
 li,
@@ -29,6 +31,7 @@ span,
 label,
 input,
 textarea {
+  font-family: "Roboto Mono", monospace;
   color: var(--secondaryText);
 }
 
@@ -74,6 +77,14 @@ h6 {
 .main-container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.greeting-wrapper {
+  display: grid;
+  border: 2px dashed lightpink;
+  min-height: 15em;
+  text-align: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 1200 px) {
