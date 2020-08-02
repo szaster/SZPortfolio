@@ -90,13 +90,15 @@ h6 {
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+
   -webkit-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
   -moz-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
   box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3em 10em;
+  grid-template-rows: 3em 30em;
 
   grid-template-areas:
     "nav-wrapper nav-wrapper"
@@ -105,16 +107,28 @@ h6 {
 
 .nav-wrapper {
   grid-area: nav-wrapper;
-  border: 1px dashed lightpink;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dots-wrapper {
+  display: flex;
+}
+
+.browser-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 .left-column {
   grid-area: left-column;
-  border: 1px dashed lightpink;
 }
 .right-column {
   grid-area: right-column;
-  border: 1px dashed lightpink;
 }
 @media screen and (max-width: 1200 px) {
   .main-container {
