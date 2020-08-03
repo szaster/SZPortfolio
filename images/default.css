@@ -6,8 +6,10 @@
 
   --maintext: black;
   --secondaryText: #4b5156;
-  --themeDotBorder: #17a2b8;
-  --previewBg: rgba(236, 216, 245, 0.945);
+  --themeDotBorder: rgb(241, 229, 229);
+
+  --previewBg: rgb(248, 245, 250);
+  --previewShadow: #f0ead6;
 }
 html,
 body {
@@ -84,8 +86,7 @@ h6 {
 
 .greeting-wrapper {
   display: grid;
-  border: 2px dashed lightpink;
-  min-height: 15em;
+  min-height: 10em;
   text-align: center;
   align-content: center;
 }
@@ -94,10 +95,6 @@ h6 {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
-
-  -webkit-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
-  -moz-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
-  box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -215,16 +212,45 @@ h6 {
 
 .right-column {
   grid-area: right-column;
+  display: grid;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#preview-shadow {
+  background-color: var(--previewShadow);
+  border-radius: 50% 20% / 10% 40%;
+  width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 #preview {
   width: 300px;
-  border: 1.5 solid #17a2b8;
   background-color: var(--previewBg);
+  border-radius: 50% 20% / 10% 40%;
+  padding: 15px 25px;
+  position: relative;
 }
 
-@media screen and (max-width: 1200 px) {
+@media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav-wrapper"
+      "left-column"
+      "right-column";
+  }
+
+  .right-column {
+    justify-content: center;
   }
 }
