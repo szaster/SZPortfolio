@@ -6,11 +6,14 @@
 
   --maintext: black;
   --secondaryText: #4b5156;
+  --themeDotBorder: #17a2b8;
+  --previewBg: rgba(236, 216, 245, 0.945);
 }
 html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -98,7 +101,6 @@ h6 {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3em 30em;
 
   grid-template-areas:
     "nav-wrapper nav-wrapper"
@@ -116,6 +118,12 @@ h6 {
 #navigation {
   margin: 0;
   padding: 10px;
+}
+
+#navigation li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .dots-wrapper {
@@ -138,14 +146,83 @@ h6 {
   width: 15px;
   border-radius: 50%;
   margin: 5px;
+
+  -webkit-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
+  -moz-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
+  box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
 }
 
 .left-column {
   grid-area: left-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+#profile_pic {
+  display: block;
+  margin: 0 auto;
+
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
+}
+
+#theme-options-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.theme-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+
+  margin: 5px;
+  border: 2px solid var(--themeDotBorder);
+
+  -webkit-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
+  -moz-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
+  box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
+}
+
+.theme-dot:hover {
+  border-width: 5px;
+}
+
+#light-mode {
+  background-color: lightgoldenrodyellow;
+}
+
+#blue-mode {
+  background-color: lightblue;
+}
+
+#green-mode {
+  background-color: rgb(205, 236, 132);
+}
+
+#pink-mode {
+  background-color: pink;
+}
+
+#settings-note {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
 .right-column {
   grid-area: right-column;
 }
+
+#preview {
+  width: 300px;
+  border: 1.5 solid #17a2b8;
+  background-color: var(--previewBg);
+}
+
 @media screen and (max-width: 1200 px) {
   .main-container {
     width: 95%;
