@@ -178,10 +178,6 @@ h6 {
 
   margin: 5px;
   border: 2px solid var(--themeDotBorder);
-
-  -webkit-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
-  -moz-box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
-  box-shadow: 68px 36px 22px -13px rgba(168, 113, 115, 0.61);
 }
 
 .theme-dot:hover {
@@ -233,6 +229,19 @@ h6 {
   border-radius: 50% 20% / 10% 40%;
   padding: 15px 25px;
   position: relative;
+}
+
+/* Adding responsivevess to about-wrapper  */
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-top: 50px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
 }
 
 @media screen and (max-width: 1200px) {
