@@ -244,6 +244,35 @@ h6 {
   background-color: var(--previewShadow);
 }
 
+.social {
+  font-size: large;
+  margin: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 1rem;
+}
+
+.fa-github {
+  color: #000000;
+}
+
+.fa-github:hover {
+  color: white;
+  background-color: #039be5;
+}
+.fa-linkedin:hover {
+  color: white;
+  background-color: #039be5;
+}
+
+.fa-twitter:hover {
+  color: white;
+  background-color: #039be5;
+}
+
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
