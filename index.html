@@ -40,8 +40,7 @@
             </div>
 
             <ul id="navigation">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
             </ul>
           </div>
 
@@ -192,24 +191,28 @@
 
     <section class="s2">
       <div class="main-container">
-        <h3 style="text-align: center;">Get in touch</h3>
-        
+        <h3 style="text-align: center;">Send a Message</h3>
         <form id="contact-form">
+          <a name="contact"></a>
           <label>Name</label>
-          <input id = "submit-btn" type="submit" value="Send" />
-
+          <input class="input-field" name="name">
+  
           <label>Subject</label>
-          <input class="input-field" type="text" name="subject" />
-
+          <input class="input-field"  name="subject">
+  
           <label>Email</label>
-          <input class="input-field" type="text" name="email" />
-
+          <input class="input-field"  name="email">
+  
           <label>Message</label>
           <textarea class="input-field" name="message"></textarea>
-
-          <input id="submit-btn" type="submit" value="Send" />
+  
+          <input id="submit-btn" type="submit" value="Send">
+          
         </form>
       </div>
     </section>
+
+
+<script type="text/javascript" src="script.js"></script>
   </body>
 </html>

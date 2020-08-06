@@ -1,5 +1,9 @@
 :root {
   --mainColor: #eaeaea;
+
+  --mainShadow: 20px 20px 60px #c7c7c7, -20px -20px 60px #ffffff;
+  --mainRadius: 5px 5px 0 0;
+
   --secondaryColor: #fff;
 
   --borderColor: #c1c1c1;
@@ -10,6 +14,8 @@
 
   --previewBg: rgb(248, 245, 250);
   --previewShadow: #f0ead6;
+
+  --inputField: inset 8px 8px 38px #ededed, inset -8px -8px 38px #ffffff;
 
   --buttonColor: black;
 }
@@ -309,6 +315,13 @@ h6 {
   object-fit: cover;
 }
 
+.thumbnail3 {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 .post-title {
   color: black;
   margin: 0;
@@ -329,9 +342,11 @@ h6 {
   max-width: 600px;
   margin: 0 auto;
   border: 1px solid var(--borderColor);
+  box-shadow: var(--secondaryShadow);
+  border-radius: var(--secondaryRadius);
   padding: 15px;
   border-radius: 5px;
-  background-color: var(--mainColor);
+  background-color: var(--SecondaryColor);
   margin-bottom: 50px;
 }
 
@@ -342,6 +357,8 @@ h6 {
 #contact-form textarea {
   min-height: 100px;
   font-size: 14px;
+  background: var(--secondaryColor);
+  box-shadow: var(--inputField);
 }
 
 .input-field {
@@ -352,6 +369,7 @@ h6 {
   border-radius: 5px;
   border: 1px solid var(--borderColor);
   font-size: 14px;
+  box-shadow: var(--inputField);
 }
 
 #submit-btn {
@@ -362,6 +380,7 @@ h6 {
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1200px) {
