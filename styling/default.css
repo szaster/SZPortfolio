@@ -97,6 +97,17 @@ h6 {
   margin: 0 auto;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.about-text {
+  padding: 1rem;
+}
+
 .greeting-wrapper {
   display: grid;
   min-height: 10em;
