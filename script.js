@@ -1,4 +1,5 @@
 let theme = localStorage.getItem("theme");
+
 if (theme == null) {
   setTheme("lime");
 } else {
@@ -11,21 +12,22 @@ for (var i = 0; themeDots.length > i; i++) {
   themeDots[i].addEventListener("click", function () {
     let mode = this.dataset.mode;
     console.log("Theme option clicked", mode);
+    setTheme(mode);
   });
 }
 
 function setTheme(mode) {
   if (mode == "lime") {
-    document.getElementsById("theme-style").href = "default.css";
+    document.getElementById("theme-style").href = "./styling/default.css";
   }
   if (mode == "blue") {
-    document.getElementsById("theme-style").href = "blue.css";
+    document.getElementById("theme-style").href = "./styling/blue.css";
   }
   if (mode == "grass") {
-    document.getElementsById("theme-style").href = "grass.css";
+    document.getElementById("theme-style").href = "./styling/grass.css";
   }
   if (mode == "candy") {
-    document.getElementsById("theme-style").href = "candy.css";
+    document.getElementById("theme-style").href = "./styling/candy.css";
   }
   localStorage.setItem("theme", mode);
 }
