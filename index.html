@@ -22,7 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./images/default.css" />
+    <link rel="stylesheet" type="text/css" href="./styling/default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="/styling/light-mode.css">
   </head>
   <body>
     <section class="s1">
@@ -51,10 +52,10 @@
             </h5>
 
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="pink-mode" class="theme-dot"></div>
+              <div data-mode = "lime" id="light-mode" class="theme-dot"></div>
+              <div data-mode = "blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode = "grass" id="green-mode" class="theme-dot"></div>
+              <div data-mode = "candy" id="pink-mode" class="theme-dot"></div>
             </div>
 
             <p id="settings-note">
@@ -195,16 +196,16 @@
         <form id="contact-form">
           <a name="contact"></a>
           <label>Name</label>
-          <input class="input-field" name="name">
+          <input class="input" type="text" name="name">
   
           <label>Subject</label>
-          <input class="input-field"  name="subject">
+          <input class="input" type="text" name="subject">
   
           <label>Email</label>
-          <input class="input-field"  name="email">
+          <input class="input" type="text" name="email">
   
           <label>Message</label>
-          <textarea class="input-field" name="message"></textarea>
+          <textarea class="w3-input w3-border w3-light-grey" name="message"></textarea>
   
           <input id="submit-btn" type="submit" value="Send">
           

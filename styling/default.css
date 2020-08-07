@@ -1,12 +1,14 @@
 :root {
-  --mainColor: #eaeaea;
+  /* --mainColor: #eaeaea; */
+  --mainColor: lightgoldenrodyellow;
 
-  --mainShadow: 20px 20px 60px #c7c7c7, -20px -20px 60px #ffffff;
-  --mainRadius: 5px 5px 0 0;
-
-  --secondaryColor: #fff;
+  /* --secondaryColor: #fff; */
+  --secondaryColor: rgba(250, 244, 167, 0.986);
 
   --borderColor: #c1c1c1;
+
+  /* --mainShadow: 20px 20px 60px #c7c7c7, -20px -20px 60px #ffffff; */
+  --mainRadius: 5px 5px 0 0;
 
   --maintext: black;
   --secondaryText: #4b5156;
@@ -35,7 +37,6 @@ h6,
 strong {
   color: var(--maintext);
   font-family: "Waiting for the Sunrise", cursive;
-
   font-weight: 500;
 }
 p,
@@ -342,7 +343,6 @@ h6 {
   max-width: 600px;
   margin: 0 auto;
   border: 1px solid var(--borderColor);
-  box-shadow: var(--secondaryShadow);
   border-radius: var(--secondaryRadius);
   padding: 15px;
   border-radius: 5px;
@@ -357,8 +357,8 @@ h6 {
 #contact-form textarea {
   min-height: 100px;
   font-size: 14px;
-  background: var(--secondaryColor);
-  box-shadow: var(--inputField);
+  /* background: var(--secondaryColor);
+  box-shadow: var(--inputField); */
 }
 
 .input-field {
@@ -369,7 +369,7 @@ h6 {
   border-radius: 5px;
   border: 1px solid var(--borderColor);
   font-size: 14px;
-  box-shadow: var(--inputField);
+  /* box-shadow: var(--inputField); */
 }
 
 #submit-btn {
